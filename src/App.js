@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import ProductPreview from "./components/preview/preview";
+import Filters from "./components/filters/filters";
+import AppContext from "./context/appContext";
+import "./App.scss";
 
 function App() {
+  const [selectedColor, setSelectedColor] = useState("grey-green");
+  const [imageIndex, setImageIndex] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="panel">
+      <AppContext.Provider
+        value={{
+          selectedColor: selectedColor,
+          setSelectedColor: setSelectedColor,
+          imageIndex: imageIndex,
+          setImageIndex: setImageIndex,
+        }}
+      >
+        <div className="panel__left">
+          <ProductPreview />
+        </div>
+        <div className="panel__right">
+          <Filters />
+        </div>
+      </AppContext.Provider>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Grey",
+    "colors": [
+      { "id": 11, "name": "grey-green" },
+      { "id": 12, "name": "grey-grey" },
+      { "id": 13, "name": "grey-red" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Red",
+    "colors": [
+      { "id": 21, "name": "red-green" },
+      { "id": 22, "name": "red-grey" },
+      { "id": 23, "name": "red-red" }
+    ]
+  }
+]

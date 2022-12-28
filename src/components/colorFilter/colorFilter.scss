@@ -1,0 +1,20 @@
+.color-filters {
+  display: flex;
+}
+
+.color-filter {
+  border: 1px solid #dddddd;
+  margin: 0 10px 0 0;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #dddddd;
+  }
+
+  &__img {
+    display: block;
+  }
+}

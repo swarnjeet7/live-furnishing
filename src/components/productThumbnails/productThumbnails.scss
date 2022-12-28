@@ -1,0 +1,25 @@
+.thumbnails {
+  display: flex;
+  justify-content: center;
+}
+.thumbnail {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  & + .thumbnail {
+    margin: 0 0 0 10px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

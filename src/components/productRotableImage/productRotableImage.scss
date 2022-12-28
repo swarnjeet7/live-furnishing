@@ -1,0 +1,20 @@
+.rotatable-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+
+  &,
+  img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  img {
+    width: 60%;
+    max-width: 1000px;
+  }
+}

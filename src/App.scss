@@ -1,0 +1,37 @@
+.panel {
+  padding: 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    flex: 0 0 55%;
+    margin: 0 0 50px;
+
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+    }
+  }
+
+  &__right {
+    flex: 0 0 calc(45% - 20px);
+  }
+}
+
+/* Safari */
+:-webkit-full-screen {
+  background-color: white;
+}
+
+/* IE11 syntax */
+:-ms-fullscreen {
+  background-color: white;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: white;
+}

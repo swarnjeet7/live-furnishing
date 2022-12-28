@@ -1,0 +1,49 @@
+.product-wrapper {
+  position: relative;
+}
+
+.product-preview-wrapper {
+  border: 1px solid #f3f3f3;
+  margin: 0 0 40px;
+}
+
+.btn-preview {
+  cursor: pointer;
+  border: none;
+  background: #f8f8f8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transition: background-color 0.25s ease-out;
+
+  &:hover {
+    background: #dfdfdf;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .minimize {
+    display: none;
+  }
+}
+
+.fullscreen {
+  .product-preview-wrapper {
+    border: none;
+  }
+
+  .maximize {
+    display: none;
+  }
+
+  .minimize {
+    display: block;
+  }
+}
